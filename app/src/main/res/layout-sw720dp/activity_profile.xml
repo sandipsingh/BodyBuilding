@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_profile" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_submit"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.30"
+                    android:text="First Name"
+                    android:textColor="#000000"
+                    android:singleLine="true"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableRight="@drawable/edit"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <!-- <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="#000000" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Last Name"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableRight="@drawable/edit"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <!-- <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="#000000" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Email"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableRight="@drawable/edit"
+
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <!-- <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="#000000" />-->
+
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:orientation="horizontal"
+                  android:padding="5dp">
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.3"
+                      android:text="Gender"
+                      android:textColor="#000000"
+                      android:textSize="25sp" />
+
+                  <EditText
+                      android:id="@+id/gender"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.70"
+                      android:text="Male"
+                      android:background="@drawable/bg_edittext"
+                      android:textCursorDrawable="@drawable/cursor_color"
+
+                      android:drawableRight="@drawable/edit"
+                      android:textColor="#000000"
+                      android:textSize="25sp" />
+              </LinearLayout>-->
+
+            <!--   <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#000000" />
+   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="DOB"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:gravity="left|center"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableRight="@drawable/edit"
+
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <!--  <View
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="#000000" />-->
+
+
+
+            <!-- <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="#000000" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Contact"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableRight="@drawable/edit"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="25sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Weight"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/bg_edittext"
+                    android:singleLine="true"
+                    android:maxLength="3"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:gravity="left|center"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="25sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_wt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40">
+
+                </Spinner>
+            </LinearLayout>
+
+            <!-- <View
+                 android:layout_width="match_parent"
+                 android:layout_height="1dp"
+                 android:background="#000000" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="Height"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/hieght"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="25sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_ht"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40">
+
+                </Spinner>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#DC0202"
+        android:text="Save"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="35sp" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+subcat_id,cat_id,imagepath,category_name
+sub_001,abs_001,abs_dumbbell_side_bends.png,Dumbbell Side Bends
+sub_002,abs_001,abs_flat_bench_lying_leg_raise.png,Flat Bench Lying Leg Raise
+sub_003,abs_001,abs_hanging_leg_raises.png,Hanging Knee Raise 
+sub_004,abs_001,abs_incline_bench_sit_ups.png,Decline Crunch
+sub_005,abs_001,abs_leg_raises.png,Leg Raises
+sub_006,biceps_002,e_z_curl.png,EZ Bar Curl
+sub_007,biceps_002,biceps_incline_hammer_curls.png,Hammer Curls
+sub_008,chest_003,chest_straight_bench_press.png,Straight Bench Press
+sub_009,chest_003,push_up.png,Push Up
+sub_010,tricept_004,tricept_push_up.png,Straight Bar Triceps Pushdown
+sub_011,tricept_004,tricept_straight_bench_press.png,Push Ups - Close Triceps
+sub_012,chest_003,chest_decline_bench_press.png,Decline Bench Press 
+sub_013,chest_003,chest_decline_dumbbell_bench_press.png,Decline Dumbbell Bench Press 
+sub_014,chest_003,chest_incline_bench_press.png,Incline Bench Press
+sub_015,chest_003,chest_incline_dumbbell_bench_press.png,Incline Fly Dumbbell Bench Press
+sub_016,biceps_002,biceps_incline_inner_biceps_curl.png,Incline Dumbbell curls
+sub_017,biceps_002,biceps_wide_grip_standing_barbell_curl.png,Wide Grip Standing Barbell Curls 
+sub_018,biceps_002,biceps_zottman_curl.png,Zottman Curl

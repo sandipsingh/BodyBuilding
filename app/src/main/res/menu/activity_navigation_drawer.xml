@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_exercises"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="EXERCISES" />
+        <item
+            android:id="@+id/nav_workout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="WORKOUT" />
+        <item
+            android:id="@+id/nav_myworkout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="MY WORKOUT" />
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="ALARM" />
+        <item
+            android:id="@+id/nav_more"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="More" />
+    </group>
+
+
+
+</menu>

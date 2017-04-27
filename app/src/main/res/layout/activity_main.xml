@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/main_toolbar" />
+
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:verticalSpacing="1dp"
+        android:background="#DC0202"
+        ></GridView>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_below="@+id/gridview"
+    android:background="#DC0202"/>
+</RelativeLayout>

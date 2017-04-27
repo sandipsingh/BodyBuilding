@@ -1,0 +1,19 @@
+item_id ,sub_catID,imageName
+item_001,sub_001,dumbbellsidebend_new
+item_002,sub_002,flat_bench_lying_legraise
+item_003,sub_003,d_abs_leg_raises
+item_004,sub_004,decline_crunch
+item_005,sub_005,leg_raises
+item_006,sub_006,barbell
+item_007,sub_007,hammer_curls
+item_008,sub_008,straight_bench_press
+item_009,sub_010,pushdown
+item_010,sub_009,push_up_2
+item_011,sub_011,closepushup
+item_012,sub_012,decline_benchpress
+item_013,sub_013,decline_dumbbell_bench_press
+item_014,sub_014,incline_bench_press
+item_015,sub_015,incline_flydumbbell_bench_press
+item_016,sub_016,incline_dumbbell_curls
+item_017,sub_017,wide_grip_standing_barbellurls
+item_018,sub_018,zottman_curl
