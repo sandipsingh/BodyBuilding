@@ -66,8 +66,7 @@ public class ExerciseDetailsAdapter extends BaseAdapter {
         }
 
 
-        Typeface face = Typeface.createFromAsset(context.getAssets(),
-                "Quicksand-Regular.ttf");
+        Typeface face = Typeface.createFromAsset(context.getAssets(), "Quicksand-Regular.ttf");
         holder.txt_categoryname.setTypeface(face);
         if(list.get(position).getItem_Details().equals("Muscles Targeted :")
                 ||list.get(position).getItem_Details().equals("Tips :")

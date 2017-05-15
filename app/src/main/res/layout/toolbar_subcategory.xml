@@ -32,7 +32,7 @@
             android:layout_toRightOf="@+id/btn_back"
             android:layout_toLeftOf="@+id/profile"
             android:textColor="#ffffff"
-            android:text="hhhhh"
+            android:text="Toolbar top"
             android:textSize="20sp" />
         <ImageView
             android:id="@+id/profile"

@@ -140,6 +140,7 @@ ImageView btn_profile;
             gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    System.out.println("====next");
                     Intent intent1=new Intent(getApplicationContext(),ExerciseDetailsActivity.class);
                     intent1.putExtra("sub_catID",list_subcategory.get(position).getSub_categoryID());
                     intent1.putExtra("sub_catName",list_subcategory.get(position).getCategory_name());
