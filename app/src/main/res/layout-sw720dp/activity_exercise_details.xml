@@ -1,32 +1,47 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#ffffff"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar_exercise" />
+        layout="@layout/main_toolbar" />
 
-
-    <LinearLayout
+    <ScrollView
+        android:layout_below="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:layout_height="match_parent">
 
-
-        <ListView
-            android:id="@+id/listview"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#ffffff"
-            android:divider="@android:color/transparent"
-            android:dividerHeight="5dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
 
-        </ListView>
-    </LinearLayout>
 
-</LinearLayout>
+            <zoom_image.FullScreenVideoView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="450dp" />
+            <TextView
+                android:layout_below="@+id/video"
+                android:id="@+id/exercise_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+            <!--<ImageView-->
+            <!--android:id="@+id/btn_start_exercise"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:src="@mipmap/ic_launcher"/>-->
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

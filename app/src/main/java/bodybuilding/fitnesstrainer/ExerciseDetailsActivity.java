@@ -32,7 +32,7 @@ public class ExerciseDetailsActivity extends AppCompatActivity {
     TextView txt_title, exercise_text;
     String subCategoryID,sub_catName, uriPath;
     ImageView btn_profile;
-    ImageView btn_timer;
+    ImageView btn_start_exercise;
     FullScreenVideoView videoView;
 
     // Determine the center of the screen to center 'earth'
@@ -50,7 +50,7 @@ public class ExerciseDetailsActivity extends AppCompatActivity {
         txt_title = (TextView) findViewById(R.id.title);
         exercise_text = (TextView) findViewById(R.id.exercise_text);
         btn_profile = (ImageView) findViewById(R.id.profile);
-//      btn_timer = (ImageView)findViewById(R.id.timer);
+//        btn_start_exercise = (ImageView)findViewById(R.id.timer);
 
         //Set toolbar
         setSupportActionBar(toolbar);
@@ -125,12 +125,12 @@ public class ExerciseDetailsActivity extends AppCompatActivity {
                 exercise_text.setText(Html.fromHtml(getResources().getString(R.string.tricepsworkout_11)));
                 break;
 
-            case "Decline Dumbbell Bench Press":
+            case "Decline Bench Press":
                 uriPath = rawpath +"decline_benchpress";
                 exercise_text.setText(Html.fromHtml(getResources().getString(R.string.chestworkout_12)));
                 break;
 
-            case "Decline Dumbnell Bench Press":
+            case "Decline Dumbbell Bench Press":
                 uriPath = rawpath +"decline_dumbbell_bench_press";
                 exercise_text.setText(Html.fromHtml(getResources().getString(R.string.chestworkout_13)));
                 break;

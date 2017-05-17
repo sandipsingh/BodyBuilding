@@ -37,12 +37,16 @@
             android:name=".ExerciseDetailsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-
         <activity
             android:name=".ProfileActivity"
             android:windowSoftInputMode="stateAlwaysHidden"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!--<activity-->
+            <!--android:name=".StartExerciseActivity"-->
+            <!--android:windowSoftInputMode="stateAlwaysHidden"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/Theme.AppCompat.NoActionBar" />-->
     </application>
 
 </manifest>

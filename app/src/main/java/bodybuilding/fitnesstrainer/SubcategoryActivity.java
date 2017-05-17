@@ -37,13 +37,10 @@ public class SubcategoryActivity extends AppCompatActivity {
     ImageView btn_back;
     GridView gridView;
     SubCategoryAdapter adapter;
-
     String categoryID, categoryName;
     /**
      * Called when the activity is first created.
      */
-    private Spinner spMainSelectCategory;
-    private TextView tvMainSelectedCate;
     ArrayList<HashMap<String, String>> myList;
     private ArrayList<String> categoryList = new ArrayList<String>();
     ArrayList<SubCategory_Item> list_subcategory;
@@ -59,11 +56,10 @@ ImageView btn_profile;
         btn_back = (ImageView) findViewById(R.id.btn_back);
         txt_title=(TextView)findViewById(R.id.txt_title);
         btn_profile=(ImageView)findViewById(R.id.profile);
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
 
         list_subcategory = new ArrayList<>();
         myList = new ArrayList<>();
-
 
         //get categoryId
 
@@ -124,8 +120,6 @@ ImageView btn_profile;
             if (categoryID.equals(CATEGORY_ID)) {
                 list_subcategory.add(new SubCategory_Item(SUBCATEGORY_ID, CATEGORY_ID, IMAGE_PATH,CATEGORY_NAME));
             }
-
-
         }
 
         for (int i = 0; i < list_subcategory.size(); i++) {
@@ -145,13 +139,9 @@ ImageView btn_profile;
                     intent1.putExtra("sub_catID",list_subcategory.get(position).getSub_categoryID());
                     intent1.putExtra("sub_catName",list_subcategory.get(position).getCategory_name());
                     startActivity(intent1);
-
                 }
             });
-
         }
-
-
     }
 
     @Override

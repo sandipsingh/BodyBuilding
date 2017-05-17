@@ -17,20 +17,11 @@ import adapter.CategoryAdapter;
 public class MainActivity extends AppCompatActivity {
     CategoryAdapter adapter;
     GridView gridView;
-    int images[] = {R.drawable.abs, R.drawable.biceps,
-            R.drawable.chest, R.drawable.triceps};
-    /*int images[]={R.drawable.abs,R.drawable.back,R.drawable.biceps,
-            R.drawable.calf,R.drawable.chest,R.drawable.forearms,
-            R.drawable.legs,R.drawable.shoulure,R.drawable.triceps};*/
-  /*  String category_name[]={"ABS","BACK","BICEPS",
-            "CALF","CHEST","FOREARMS",
-            "LEGS","SHOULDER","TRISEPT"};*/
+    int images[] = {R.drawable.abs, R.drawable.biceps, R.drawable.chest, R.drawable.triceps};
 
-    String category_name[] = {"ABS", "BICEPS",
-            "CHEST", "TRICEPS"};
+    String category_name[] = {"ABS", "BICEPS", "CHEST", "TRICEPS"};
 
-    String categoryID[] = {"abs_001", "biceps_002", "chest_003",
-            "tricept_004"};
+    String categoryID[] = {"abs_001", "biceps_002", "chest_003", "triceps_004"};
     ImageView btn_profile;
 
     @Override
@@ -42,16 +33,6 @@ public class MainActivity extends AppCompatActivity {
         gridView = (GridView) findViewById(R.id.gridview);
         btn_profile = (ImageView) findViewById(R.id.profile);
         setSupportActionBar(toolbar);
-
-
-
-        String str=" abc d 1234567890pqr 54897";
-        Pattern pattern = Pattern.compile("\\w+([0-9]+)\\w+([0-9]+)");
-        Matcher matcher = pattern.matcher(str);
-        for(int i = 0 ; i < matcher.groupCount(); i++) {
-            matcher.find();
-            System.out.println("=====Find number"+matcher.group());
-        }
 
         btn_profile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,8 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("cat_name", category_name[position]);
                 System.out.println("===========cat_id===" + categoryID[position]);
                 startActivity(intent);
-
-
             }
         });
     }
